@@ -1,0 +1,29 @@
+enum Cathegory {
+  DataScience
+  Backend
+  Frontend
+  Others
+}
+
+type Vacant {
+  _id: ID!
+  title: String!
+  link: String!
+  cathegory: Cathegory!
+}
+
+type Query {
+  "Devuelve vacantes por paginado"
+  getVacants(carrer: Cathegory!, page: Int!) : [Vacant]
+}
+
+input VacantDto {
+  title: String!
+  link: String!
+  cathegory: Cathegory!
+}
+
+type Mutation {
+  "Crea una vacante"
+  createVacant(vacant: VacantDto!) : Vacant
+}
