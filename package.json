@@ -1,6 +1,6 @@
 {
   "name": "entropysorting",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Search and apply to vacancies master more easy",
   "main": "index.js",
   "scripts": {
@@ -30,7 +30,8 @@
     "express-graphql": "^0.12.0",
     "graphql": "^15.4.0",
     "graphql-tools": "^7.0.2",
-    "mongodb": "^3.6.3"
+    "mongodb": "^3.6.3",
+    "pm2": "^4.5.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.6"
